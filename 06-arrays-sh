@@ -1,0 +1,21 @@
+#!/bin/bash
+
+MOVIES=( "RRR" "Bahubali" "bahubali2")
+
+# array -Arrays are data structures that store a collection of elements. 
+# Each element in an array is accessed using its index.
+
+# index -an index in an array refers to the position of an element within the array
+
+# index starts wit zero 
+
+# Size of array starts with one
+
+# The size of the above array=3(1,2,3)
+
+# Index of the above array=0,1,2
+
+echo "Q: Print Bahubali2"
+echo "${MOVIES[2]}"
+
+echo "First movie is: ${MOVIES[0]}"
