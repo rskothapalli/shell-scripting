@@ -1,6 +1,8 @@
 #!/bin/bash
 NO1=$1
-NO2=$1
+NO2=$2
 
 SUM=$(($NO1+$NO2))
+
+Sum of the above two numbers is: $SUM
 
