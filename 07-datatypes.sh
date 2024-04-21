@@ -4,5 +4,3 @@ NO2=$1
 
 SUM=$(($NO1+$NO2))
 
-Total sum is: $SUM
-
