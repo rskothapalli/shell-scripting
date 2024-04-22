@@ -6,4 +6,4 @@ if [ $NUMBER -gt 10 ]
 echo "Given number is greater than 10"
   else
 echo "Given number is smaller than 10"
-fi``
+fi
