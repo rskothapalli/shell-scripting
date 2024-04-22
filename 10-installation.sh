@@ -2,9 +2,10 @@
 USERID=$(id -u)
 if [ $USERID -eq 0 ]
 then 
-  echo "You are a super user"
+  echo "Please run this script with super user"
+  exit 1
 else
-  echo "Please run this script with root priviliges"
+  echo "You are a super user"
+
 
   dnf install msql -y
-  
