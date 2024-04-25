@@ -24,10 +24,11 @@ fi
   if [ $? -ne 0 ]
   then
     echo "Installation fo git is failed"
+    set -e
   else
     echo "Installation of git is success"
   fi
 
-  
+
 
 
