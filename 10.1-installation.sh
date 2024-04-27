@@ -13,11 +13,20 @@ dnf install mysql -y
 
 if [ $? -ne 0 ]
 then 
-  echo "Installation failed"
+  echo "mysql Installation failed"
   set -e 
 else 
   echo "installation success"
 fi
 
+dnf install git -y
+
+if [ $? -ne 0 ]
+then 
+  echo "git installatino failed"
+  set -e
+else
+  echo "git installation success"
+fi
 
 
