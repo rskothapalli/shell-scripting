@@ -1,6 +1,6 @@
 #!/bin/bash
 hello () {
-  echo "good morning all"
+  echo "hello $1 ; hello $2
 }
 
 hello
