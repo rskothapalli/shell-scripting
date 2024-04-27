@@ -8,6 +8,16 @@ then
 else 
   echo "You are a root user"
 fi
-set-e
 
 dnf install mysql -y
+
+if [ $? -ne 0 ]
+then 
+  echo "Installation failed"
+  set -e 
+else 
+  echo "installation success"
+fi
+
+
+
