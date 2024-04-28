@@ -1,9 +1,9 @@
 #!/bin/bash
 
 USERID=$(id -u)
-TIMESTAMP=$(date +%F -%H -%M -%S)
-SCRIPT_NAME=$( $0 | cut -d "." -f1)
-LOGFILE=$(/temp/$SCRIPT_NAME-TIMESTAMP.log)
+TIMESTAMP=$(date +%F-%H-%M-%S)
+SCRIPT_NAME=$($0 | cut -d "." -f1)
+LOGFILE=/temp/$SCRIPT_NAME-TIMESTAMP.log
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
@@ -20,7 +20,7 @@ else
 fi
 }
 
-if [ USERID -ne 0 ]
+if [ $USERID -ne 0 ]
 then
   echo "Plese run this script as root user"
   exit 1
