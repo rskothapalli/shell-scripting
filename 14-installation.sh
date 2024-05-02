@@ -1,6 +1,6 @@
 #!/bin/bash
 USERID=(id -u)
-SCRIPT_NAME=(echo $0 | cut -d "." 1f)
+SCRIPT_NAME=(echo $0 | cut -d "." -1f)
 TIMESTAMP=(date +%F-%H-%M-%S)
 LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 
@@ -37,4 +37,5 @@ do
         dnf install $i -y &>>LOGFILE
         VALIDATE $? "Installation of $i"
     fi
+
 done
